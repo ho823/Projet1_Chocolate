@@ -1,0 +1,92 @@
+/* Général */
+* {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+body {
+    text-align: center;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: #ba8d3a;
+}
+
+/* Header */
+header {
+    height: 20vh;
+    background-image: url(img/chocolate_chopped.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* Navbar */
+.navbar_container {
+    background-color:#362608;
+    opacity: 0.8;
+}
+
+nav ul {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar_container ul li {
+    color: #ba8d3a;
+    padding: 1em;
+}
+
+/* Id pour placer le contact du navbar à la fin */
+#go_to_the_end {
+ text-align: end;
+}
+
+/* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
+.active {
+    color: rgb(53, 52, 52);
+    background-color: rgb(198, 199, 199);
+    box-shadow: 0 0 1.5px rgb(53, 52, 52);
+}
+
+/* Footer */
+footer {
+    background-color: #362608;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer div.position_items_footer, footer div#container_a_footer {
+    width: 50vw;
+}
+
+footer div.position_items_footer:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer div.position_items_footer_bis {
+    width: 50vw;
+}
+
+footer div ul, footer div ul li, footer div p, footer div a  {
+     width: auto;
+     padding: 0.5em;
+}
+
+div#container_a_footer {
+    margin-top: 1em;
+}
+
+footer div p {
+    color: #ba8d3a;
+}
