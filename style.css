@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    width: 100vw;
 }
 
 body {
@@ -50,11 +49,11 @@ nav ul {
 }
 
 /* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
-.active {
+/* .active {
     color: rgb(53, 52, 52);
     background-color: rgb(198, 199, 199);
     box-shadow: 0 0 1.5px rgb(53, 52, 52);
-}
+} */
 
 /* Footer */
 footer {
@@ -90,3 +89,75 @@ div#container_a_footer {
 footer div p {
     color: #ba8d3a;
 }
+
+/*----------- PAGE CONTACT--------------- */
+
+/* AFFICHAGE DES COORDONNÉES */
+.coordonnees {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.coordonnees h2 {   /* Titre des coordonnées*/
+  padding-bottom: 20px;
+}
+.coordonnees p {  /* espacement des lignes de coordonnées */
+  padding-bottom: 10px;
+}
+
+/* STYLE DE LA LIGNE DE SÉPARATION */
+hr {
+  border-color: rgba(249, 231, 130, 0.2);
+}
+
+
+/* STYLE DU FORMULAIRE */
+.contact h2 {     /* Titre du formulaire */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact {    /* section du formulaire */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 1em;
+}
+.submit {   /* bouton "Envoyer */
+  align-self: flex-end;
+}
+form input, select, textarea {
+    margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 700px;
+}
+
+
+
+
+
+
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 961px) {
+
+
+
+} /*END DESKTOP STYLES*/
+
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 961px) {
+
+
+
+
+
+} /* END MOBILE STYLE
