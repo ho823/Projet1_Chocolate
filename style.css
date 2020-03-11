@@ -144,6 +144,60 @@ form {
 
 
 
+/*----------- PAGE PRODUITS --------------- */
+
+.catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalogue div {
+  display: flex;
+  width: 30vw;
+  margin: 2em;
+
+}
+
+.image {
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  height: 330px;
+  width: 250px;
+  min-width: 230px;
+  /* margin-right: 1em;
+  margin-left: 2em; */
+}
+
+
+
+.catalogue article {
+  height: auto;
+  margin-top: 2em;
+  width: auto;
+  text-align: justify;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+}
+
+article {
+
+}
+
+
+
+
+
+
+
+
+
 
 /* DESKTOP STYLES */
 @media only screen and (min-width: 961px) {
