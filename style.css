@@ -3,64 +3,54 @@
     display: flex;
     margin-bottom: 5%;
     justify-content: center;  
-    border:solid brown;
-}
+} 
 
 .photo_histoire {
     width: 20%;
     height: 40%;  
-}
+}/* Photo de la sectio présentation*/
 
 .text_histoire{
     padding-left: 1rem;
     width: 40%;
     height: 30%;
-    border:solid olive;
-}
+}/* Texte de la section présentation */
 
 .photo_actu {
     width: 20%;
     height: 20%;
-  }
+  }/* Photo des articles */
 
 .actualite {
     display: flex;
     flex-direction:column ;
-    border : solid violet;  
     padding: 10px;
-    
-    
-}
+} /* Section actualité qui comprend les 2 articles */
 
-.one{
+.actu_article{
     display: flex;
     flex-direction: row;
-    border:solid palevioletred;
     padding: 10px;
     justify-content: center;
-
-
-}
-.asideone {
+}/* Comprend l'image, le titre et le texte de l'article */
+.contenu_actu {
     display: flex;
-    border:solid red;
     flex-direction: column;
     padding: 10px;
-    width: 42%;
-
-}
+    width: 40%;
+}/* Comprend le titre et le texte de l'article */
 
 h3 {
     width: 80%;
     height: 20%;
     font-size: 1.3rem;
     font-weight: bold;
+}/* titre de l'article */
 
-}
-
-.article_actu {
+.text_actu {
     width: 30%;
     height: 40%;
-}
+}/* texte de l'article */
+
 
 }
