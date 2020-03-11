@@ -1,0 +1,61 @@
+
+.presentation {
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;  
+    border:solid brown;
+}
+
+.photo_histoire {
+    width: 20%;
+    height: 40%;  
+}
+
+.text_histoire{
+    padding-left: 1rem;
+    width: 40%;
+    height: 30%;
+    border:solid olive;
+}
+
+.photo_actu {
+    width: 20%;
+    height: 20%;
+  }
+
+.actualite {
+    display: flex;
+    flex-direction:column ;
+    border : solid violet;  
+    padding: 10px;
+    
+    
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    border:solid palevioletred;
+    padding: 10px;
+    justify-content: center;
+
+}
+.asideone {
+    display: flex;
+    border:solid red;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.article_actu {
+    width: 30%;
+    height: 40%;
+}
+
+}
