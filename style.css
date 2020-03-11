@@ -198,19 +198,78 @@ form {
 
 
 
+  /*----------- PAGE PRESENTATION--------------- */
+
+  .presentation {
+      display: flex;
+      margin-bottom: 5%;
+      justify-content: center;
+  }
+
+  .photo_histoire {
+      width: 20%;
+      height: 40%;
+  }/* Photo de la sectio présentation*/
+
+  .text_histoire{
+      padding-left: 1rem;
+      width: 40%;
+      height: 30%;
+  }/* Texte de la section présentation */
+
+  .photo_actu {
+      width: 20%;
+      height: 20%;
+    }/* Photo des articles */
+
+  .actualite {
+      display: flex;
+      flex-direction:column ;
+      padding: 10px;
+  } /* Section actualité qui comprend les 2 articles */
+
+  .actu_article{
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+      justify-content: center;
+  }/* Comprend l'image, le titre et le texte de l'article */
+
+  .contenu_actu {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      width: 40%;
+  }/* Comprend le titre et le texte de l'article */
+
+  h3 {
+      width: 80%;
+      height: 20%;
+      font-size: 1.3rem;
+      font-weight: bold;
+  }/* titre de l'article */
+
+  .text_actu {
+      width: 30%;
+      height: 40%;
+  }/* texte de l'article */
+
+
 
 
 
 /*----------- PAGE PRODUITS --------------- */
 
 .catalogue {
+  /* margin:auto; */
   display: flex;
+  width: auto;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.catalogue div {
+.produit {
   display: flex;
   width: 30vw;
   margin: 2em;
@@ -240,14 +299,9 @@ form {
 .description {
   display: flex;
   flex-direction: column;
+  margin: 2em;
   min-width: 240px;
 }
-
-article {
-
-}
-
-
 
 
 
@@ -264,117 +318,68 @@ article {
 } /*END DESKTOP STYLES*/
 
 
-/* MOBILE STYLES */
-@media only screen and (max-width: 961px) {
-
-/*----------- PAGE CONTACT MOBILE--------------- */
-
-/* AFFICHAGE DES COORDONNÉES */
-.coordonnees {
-    padding: 8%;
-    font-size: 1.1rem;
-  }
-  .coordonnees h2 {   /* Titre des coordonnées*/
-    padding-bottom: 5%;
-  }
-  .coordonnees p {  /* espacement des lignes de coordonnées */
-    padding-bottom: 3%;
-  }
-
-  /* STYLE DU FORMULAIRE */
-  .contact h2 {     /* Titre du formulaire */
-    padding-bottom: 5%;
-    padding-top: 5%;
-  }
-
-  .contact {    /* section du formulaire */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    padding: 1em;
-  }
-  .submit {   /* bouton "Envoyer */
-    align-self: flex-end;
-    width: 20%;
-  }
-  form input, select, textarea {
-      margin-bottom: 4%;
-      height: 60px;
-      font-size: 1.1rem;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    width: 90vw;
-    max-width: 700px;
-  }
 
 
 
 
-} /* END MOBILE STYLE*/
 
-/*----------- PAGE PRESENTATION--------------- */
 
-.presentation {
-    display: flex;
-    margin-bottom: 5%;
-    justify-content: center;
-}
-
-.photo_histoire {
-    width: 20%;
-    height: 40%;
-}/* Photo de la sectio présentation*/
-
-.text_histoire{
-    padding-left: 1rem;
-    width: 40%;
-    height: 30%;
-}/* Texte de la section présentation */
-
-.photo_actu {
-    width: 20%;
-    height: 20%;
-  }/* Photo des articles */
-
-.actualite {
-    display: flex;
-    flex-direction:column ;
-    padding: 10px;
-} /* Section actualité qui comprend les 2 articles */
-
-.actu_article{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    justify-content: center;
-}/* Comprend l'image, le titre et le texte de l'article */
-
-.contenu_actu {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 40%;
-}/* Comprend le titre et le texte de l'article */
-
-h3 {
-    width: 80%;
-    height: 20%;
-    font-size: 1.3rem;
-    font-weight: bold;
-}/* titre de l'article */
-
-.text_actu {
-    width: 30%;
-    height: 40%;
-}/* texte de l'article */
-
-/*-----------------------RESPONSIVE PRESENTATION-------------------*/
+/*-----------------------------------------------------------------*/
+/*------------------RESPONSIVE MOBILE PRESENTATION-----------------*/
+/*-----------------------------------------------------------------*/
 
 
 @media screen and (max-width: 768px){
+
+
+  /*----------- PAGE CONTACT MOBILE--------------- */
+
+  /* AFFICHAGE DES COORDONNÉES */
+    .coordonnees {
+      padding: 8%;
+      font-size: 1.1rem;
+    }
+    .coordonnees h2 {   /* Titre des coordonnées*/
+      padding-bottom: 5%;
+    }
+    .coordonnees p {  /* espacement des lignes de coordonnées */
+      padding-bottom: 3%;
+    }
+
+    /* STYLE DU FORMULAIRE */
+    .contact h2 {     /* Titre du formulaire */
+      padding-bottom: 5%;
+      padding-top: 5%;
+    }
+
+    .contact {    /* section du formulaire */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      padding: 1em;
+    }
+    .submit {   /* bouton "Envoyer */
+      align-self: flex-end;
+      width: 20%;
+    }
+    form input, select, textarea {
+        margin-bottom: 4%;
+        height: 60px;
+        font-size: 1.1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      max-width: 700px;
+    }
+
+
+
+
+
+  /*----------- PAGE MAISON (MOBILE)--------------- */
 
     .presentation {
         margin-top: 5%;
@@ -438,7 +443,30 @@ h3 {
         font-size: 1.1 rem;
     }/* texte de l'article */
 
- }
+
+
+  /*----------- PAGE PRODUIT (MOBILE)--------------- */
+
+
+    .catalogue {
+      flex-direction: column;
+      flex-wrap:nowrap;
+
+    }
+
+    .catalogue div {
+      display: flex;
+      flex-direction: column;
+      width: 30vw;
+      margin: 2em;
+
+    }
+
+
+
+
+
+ }  /*FIN DU MEDIA QUERY */
 
 
 }
