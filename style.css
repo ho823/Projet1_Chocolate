@@ -15,10 +15,11 @@ ul, a {
 }
 
 /* Header */
-header {
+header#main_header {
     height: 20vh;
     background-image: url(img/chocolate_chopped.webp);
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -41,11 +42,6 @@ nav ul {
 .navbar_container ul li {
     color: #ba8d3a;
     padding: 1em;
-}
-
-/* Id pour placer le contact du navbar à la fin */
-#go_to_the_end {
- text-align: end;
 }
 
 /* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
@@ -89,6 +85,61 @@ div#container_a_footer {
 footer div p {
     color: #ba8d3a;
 }
+
+/*  ----------------------- HOME PAGE ------------------- */
+/* Section Notre maison */
+section#main_article {
+    height: 50vh;
+    border-bottom: solid 1px black;
+}
+
+section#main_article article {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section#main_article article div {
+    height: auto;
+}
+
+/* Nos produits */
+section#carousel_produits {
+    height: 50vh;
+    border-bottom: solid 1px black;
+}
+
+/* Nos Actualités */
+section#articles {
+    height: 50vh;
+    border-bottom: solid 1px black;
+    display: flex;
+    justify-content: center;
+}
+
+div#articles_container {
+    height: inherit;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.articles_news {
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.articles_news_revert {
+    height: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 /*----------- PAGE CONTACT--------------- */
 
