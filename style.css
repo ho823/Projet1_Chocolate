@@ -37,6 +37,12 @@ nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+}
+
+nav a:hover {   /* Quand on passe la souris sur les liens  */
+  color: rgba(247, 237, 212, 1);
+  text-decoration: none;
 }
 
 .navbar_container ul li {
@@ -274,13 +280,13 @@ article {
   .coordonnees p {  /* espacement des lignes de coordonnées */
     padding-bottom: 3%;
   }
-    
+
   /* STYLE DU FORMULAIRE */
   .contact h2 {     /* Titre du formulaire */
     padding-bottom: 5%;
     padding-top: 5%;
   }
-  
+
   .contact {    /* section du formulaire */
     display: flex;
     flex-direction: column;
@@ -303,7 +309,7 @@ article {
     width: 90vw;
     max-width: 700px;
   }
-  
+
 
 
 
@@ -314,12 +320,12 @@ article {
 .presentation {
     display: flex;
     margin-bottom: 5%;
-    justify-content: center;  
-} 
+    justify-content: center;
+}
 
 .photo_histoire {
     width: 20%;
-    height: 40%;  
+    height: 40%;
 }/* Photo de la sectio présentation*/
 
 .text_histoire{
@@ -367,16 +373,16 @@ h3 {
 
 /*-----------------------RESPONSIVE PRESENTATION-------------------*/
 
- 
+
 @media screen and (max-width: 768px){
 
     .presentation {
-        margin-top: 5%; 
+        margin-top: 5%;
         margin-left: 1%;
-        margin-right: 1%; 
+        margin-right: 1%;
         display: flex;
         flex-direction: row;
-    } 
+    }
 
     .text_histoire{
         font-size: 1.1rem;
@@ -388,7 +394,7 @@ h3 {
 
     .photo_histoire {
         width: 50%;
-        height: 60%;  
+        height: 60%;
     }/* Photo de la sectio présentation*/
 
     .actualite {
@@ -404,7 +410,7 @@ h3 {
         padding: 4%;
         margin-left: 20%;
       }/* Photo des articles */
-    
+
     .actu_article{
         flex-direction: column;
         padding: 2%;
@@ -417,7 +423,7 @@ h3 {
         width: 100%;
         text-align: center;
     }/* Comprend le titre et le texte de l'article */
-    
+
     h3 {
         width: 100%;
         height: 40%;
@@ -425,7 +431,7 @@ h3 {
         font-weight: bold;
         margin-bottom:2%;
     }/* titre de l'article */
-    
+
     .text_actu {
         width: 100%;
         height: 100%;
@@ -436,4 +442,3 @@ h3 {
 
 
 }
-
