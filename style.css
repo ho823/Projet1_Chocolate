@@ -39,18 +39,23 @@
     padding: 10px;
     justify-content: center;
 
+
 }
 .asideone {
     display: flex;
     border:solid red;
     flex-direction: column;
     padding: 10px;
+    width: 42%;
 
 }
 
 h3 {
+    width: 80%;
+    height: 20%;
     font-size: 1.3rem;
     font-weight: bold;
+
 }
 
 .article_actu {
