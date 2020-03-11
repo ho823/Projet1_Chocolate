@@ -207,7 +207,49 @@ form {
 /* MOBILE STYLES */
 @media only screen and (max-width: 961px) {
 
+/*----------- PAGE CONTACT MOBILE--------------- */
 
+/* AFFICHAGE DES COORDONNÉES */
+.coordonnees {
+    padding: 8%;
+    font-size: 1.1rem;
+  }
+  .coordonnees h2 {   /* Titre des coordonnées*/
+    padding-bottom: 5%;
+  }
+  .coordonnees p {  /* espacement des lignes de coordonnées */
+    padding-bottom: 3%;
+  }
+    
+  /* STYLE DU FORMULAIRE */
+  .contact h2 {     /* Titre du formulaire */
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+  
+  .contact {    /* section du formulaire */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 1em;
+  }
+  .submit {   /* bouton "Envoyer */
+    align-self: flex-end;
+    width: 20%;
+  }
+  form input, select, textarea {
+      margin-bottom: 4%;
+      height: 60px;
+      font-size: 1.1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 700px;
+  }
+  
 
 
 
