@@ -50,6 +50,10 @@ nav ul {
     padding: 1em;
 }
 
+nav a:hover {   /* Quand on passe la souris sur les liens  */
+  color: rgba(247, 237, 212, 1);
+  text-decoration: none;
+}
 
 /* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
 
