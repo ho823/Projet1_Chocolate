@@ -334,9 +334,7 @@ form {
 
 /* Comprend le titre et le texte de l'article */
 
-h3 {
-    width: 80%;
-    height: 20%;
+#maison h3 {
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -344,10 +342,7 @@ h3 {
 
 /* titre de l'article */
 
-.text_actu {
-    width: 30%;
-    height: 40%;
-}
+
 
 
 /* texte de l'article */
@@ -541,9 +536,8 @@ h3 {
         text-align: center;
     }
     /* Comprend le titre et le texte de l'article */
-    h3 {
+    #maison h3 {
         width: 100%;
-        height: 40%;
         font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 2%;
@@ -552,7 +546,7 @@ h3 {
     .text_actu {
         width: 100%;
         height: 100%;
-        font-size: 1.1 rem;
+        font-size: 1.1rem;
     }
     /* texte de l'article */
     /*----------- PAGE PRODUIT (MOBILE)--------------- */
