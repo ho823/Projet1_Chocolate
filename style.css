@@ -26,7 +26,7 @@ header#main_header {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 
@@ -582,7 +582,7 @@ form {
 
 /* MOBILE STYLES */
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     /* ----------------------GENERAL------------------- */
     * {
         margin: 0;
@@ -606,7 +606,7 @@ form {
         background-position: center;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
     }
     /* Navbar */
     .navbar_container {
@@ -626,10 +626,10 @@ form {
     }
     /* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
     /* .active {
-      color: rgb(53, 52, 52);
-      background-color: rgb(198, 199, 199);
-      box-shadow: 0 0 1.5px rgb(53, 52, 52);
-  } */
+        color: rgb(53, 52, 52);
+        background-color: rgb(198, 199, 199);
+        box-shadow: 0 0 1.5px rgb(53, 52, 52);
+    } */
     /* Footer */
     footer {
         background-color: #362608;
@@ -685,12 +685,17 @@ form {
         display: block;
         position: relative;
     }
+    div.main_article_image {
+        width: 100%;
+        text-align: center;
+    }
     div.main_article_image img {
         width: 75%;
     }
     div.main_article_content {
         position: absolute;
         top: 65%;
+        left: auto;
         max-block-size: 40%;
         background-color: khaki;
         opacity: 0.8;
@@ -709,10 +714,13 @@ form {
         flex-direction: column;
     }
     div#articles_container article {
+        display: flex;
+        flex-direction: column;
         margin: 0.5rem;
         box-shadow: 0 0 1rem black;
     }
     div.articles_image {
+        width: auto;
         padding: 1em;
     }
     div.articles_image img {
@@ -782,6 +790,4 @@ form {
         max-width: 700px;
     }
 }
-
-
 /* END MOBILE STYLE*/
