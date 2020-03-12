@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(254, 254, 226);
+}
+
 #index {
     text-align: center;
 }
@@ -163,7 +167,7 @@ div#slider {
     width:100%;
     margin: auto;
 }
-    
+
 div#slider figure {
     position: relative;
     width: 500%;
@@ -181,7 +185,7 @@ div#slider{
     width: 100%;
     overflow: hidden;
 }
-     
+
 @keyframes slidy {
     0% {left:0%;}
     20% {left:0%;}
@@ -193,7 +197,7 @@ div#slider{
     95% {left:-300%;}
     100% {left:-400%;}
 }
-     
+
 div#slider figure {
     position: relative;
     width: 500%;
@@ -205,7 +209,7 @@ div#slider figure {
     animation: 30s slidy infinite;
 }/*------------------*FIN CODE CSS POUR LE FAIRE FONCTIONNER*--------------*/
 /*------------------*FIN-CARROUSEL*--------------*/
-       
+
 
 /* Nos Actualités */
 
@@ -644,6 +648,7 @@ form {
     }
     body {
         text-align: center;
+
     }
     ul,
     a {
