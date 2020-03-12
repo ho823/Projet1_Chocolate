@@ -271,9 +271,9 @@ form {
 
 .produit {
   display: flex;
-  width: 30vw;
+  width: 500px;
   margin: 2em;
-
+  min-width: 500px;
 }
 
 .image {
@@ -313,8 +313,6 @@ form {
 /* DESKTOP STYLES */
 @media only screen and (min-width: 961px) {
 
-
-
 } /*END DESKTOP STYLES*/
 
 
@@ -325,8 +323,31 @@ form {
 
 
 /*-----------------------------------------------------------------*/
+/*--------------------RESPONSIVE ECRAN < 1300px--------------------*/
+/*-----------------------------------------------------------------*/
+/* instructions spécifiques pour une taille d'écran inférieure ) 1300 px */
+@media screen and (max-width: 1300px){
+  /*--PAGE PRODUITS--*/
+  .catalogue {
+    display: block; /* affichage en block des articles du catalogue dans la page "Produits" */
+    align-content: center;
+        /* align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .produit {
+    /* align-items: center;
+        align-content: center; */
+  margin-left: auto;
+  margin-right: auto;
+  }
+} /* fin du média query pour affichage < 1300px */
+
+
+/*-----------------------------------------------------------------*/
 /*------------------RESPONSIVE MOBILE PRESENTATION-----------------*/
 /*-----------------------------------------------------------------*/
+
 
 
 @media screen and (max-width: 768px){
@@ -448,22 +469,32 @@ form {
   /*----------- PAGE PRODUIT (MOBILE)--------------- */
 
 
-    .catalogue {
+    .catalogue { /* Mise en colonne pour affichage mobile */
       flex-direction: column;
-      flex-wrap:nowrap;
-
+      align-content: center;
+      flex-wrap: nowrap;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    .catalogue div {
-      display: flex;
-      flex-direction: column;
-      width: 30vw;
+    .catalogue div { /* Mise en colonne pour affichage mobile */
+      display: block;
+      align-content: center;
       margin: 2em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .produit { /* solution au problème de marge */
+      width:100%;
+      min-width: 0;
+    }
+      article { /* ajustement du texte */
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+
 
     }
-
-
-
 
 
  }  /*FIN DU MEDIA QUERY */
