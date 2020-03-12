@@ -1,4 +1,7 @@
-/* Général */
+/* DESKTOP STYLES */
+@media only screen and (min-width: 769px) {
+
+    /* Général */
 * {
     margin: 0;
     padding: 0;
@@ -54,6 +57,9 @@ nav ul {
 /* Footer */
 footer {
     background-color: #362608;
+}
+
+footer div.footer_container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -67,6 +73,12 @@ footer div.position_items_footer:first-child {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+footer div.position_items_footer:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer div.position_items_footer_bis {
@@ -89,45 +101,71 @@ footer div p {
 /*  ----------------------- HOME PAGE ------------------- */
 /* Section Notre maison */
 section#main_article {
-    height: 50vh;
-    border-bottom: solid 1px black;
+    margin: 2em 0;
 }
 
 section#main_article article {
+    width: 75%;
     height: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: inline-block;
+    position: relative;
+    margin: 1rem;
+    padding: 1rem;
 }
 
-section#main_article article div {
-    height: auto;
+div.main_article_image {
+    width: 50%;
+    text-align: start;
+}
+
+div.main_article_image img {
+    display: inline-block;
+    width: inherit;
+}
+
+div.main_article_content {
+    position: absolute;
+    background-color: khaki;
+    opacity: 0.8;
+    top: 60%;
+    left: 20%;
+    max-block-size: 45%;
+    padding: 1em 2em;
 }
 
 /* Nos produits */
-section#carousel_produits {
-    height: 50vh;
-    border-bottom: solid 1px black;
-}
 
 /* Nos Actualités */
 section#articles {
-    height: 50vh;
-    border-bottom: solid 1px black;
+    margin: 5rem 0;
     display: flex;
     justify-content: center;
 }
 
 div#articles_container {
     height: inherit;
-    width: 75%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
+div#articles_container article {
+    margin: 0.5rem;
+    box-shadow: 0 0 1rem black;
+}
+
+div.articles_image {
+    width: 100%;
+    padding: 1rem;
+}
+
+div.articles_image img {
+    display: inline-block;
+    width: 100%;
+}
+
 .articles_news {
-    height: 33%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -135,9 +173,15 @@ div#articles_container {
 }
 
 .articles_news_revert {
-    height: 30%;
     display: flex;
     flex-direction: row-reverse;
+}
+
+div.articles_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
 }
 
 
@@ -191,83 +235,234 @@ form {
 }
 
 
-
-
-
-
-
-/* DESKTOP STYLES */
-@media only screen and (min-width: 961px) {
-
-
-
 } /*END DESKTOP STYLES*/
 
 
 /* MOBILE STYLES */
-@media only screen and (max-width: 961px) {
+@media only screen and (max-width: 768px) {
 
 
+/* ----------------------GENERAL------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: #ba8d3a;
+}
+
+/* Header */
+header#main_header {
+    height: 20vh;
+    background-image: url(img/chocolate_chopped.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* Navbar */
+.navbar_container {
+    background-color:#362608;
+    opacity: 0.8;
+}
+
+nav ul {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar_container ul li {
+    color: #ba8d3a;
+    padding: 1em;
+}
+
+/* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
+/* .active {
+    color: rgb(53, 52, 52);
+    background-color: rgb(198, 199, 199);
+    box-shadow: 0 0 1.5px rgb(53, 52, 52);
+} */
+
+/* Footer */
+footer {
+    background-color: #362608;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer div.footer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.position_items_footer, footer div#container_a_footer {
+    width: 50vw;
+}
+
+footer div.position_items_footer:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer div.position_items_footer:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div.position_items_footer_bis {
+    width: 50vw;
+}
+
+footer div ul, footer div ul li, footer div p, footer div a  {
+     width: auto;
+     padding: 0.5em;
+}
+
+div#container_a_footer {
+    margin-top: 1em;
+}
+
+footer div p {
+    color: #ba8d3a;
+}
+
+/*  ----------------------- HOME PAGE ------------------- */
+/* Section Notre maison */
+section#main_article {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+section#main_article article {
+    width: 75%;
+    padding: 1em;
+    display: block;
+    position: relative;
+}
+
+div.main_article_image img {
+    width: 75%;
+}
+
+div.main_article_content {
+    position: absolute;
+    top: 65%;
+    max-block-size: 40%;
+    background-color: khaki;
+    opacity: 0.8;
+    overflow: auto;
+}
+
+/* Nos produits */
+
+/* Nos Actualités */
+section#articles {
+    margin: 5em 0em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#articles_container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+div#articles_container article {
+    margin: 0.5rem;
+    box-shadow: 0 0 1rem black;
+}
+
+div.articles_image {
+    padding: 1em;
+}
+
+div.articles_image img {
+    display: inline-block;
+    width: 100%;
+}
+
+div.articles_news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+div.articles_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/*----------- PAGE CONTACT--------------- */
+
+/* AFFICHAGE DES COORDONNÉES */
+.coordonnees {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.coordonnees h2 {   /* Titre des coordonnées*/
+  padding-bottom: 20px;
+}
+.coordonnees p {  /* espacement des lignes de coordonnées */
+  padding-bottom: 10px;
+}
+
+/* STYLE DE LA LIGNE DE SÉPARATION */
+hr {
+  border-color: rgba(249, 231, 130, 0.2);
+}
+
+
+/* STYLE DU FORMULAIRE */
+.contact h2 {     /* Titre du formulaire */
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.contact {    /* section du formulaire */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 1em;
+}
+.submit {   /* bouton "Envoyer */
+  align-self: flex-end;
+}
+form input, select, textarea {
+    margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 700px;
+}
 
 
 
 } /* END MOBILE STYLE*/
-
-/*----------- PAGE PRESENTATION--------------- */
-
-.presentation {
-    display: flex;
-    margin-bottom: 5%;
-    justify-content: center;  
-} 
-
-.photo_histoire {
-    width: 20%;
-    height: 40%;  
-}/* Photo de la sectio présentation*/
-
-.text_histoire{
-    padding-left: 1rem;
-    width: 40%;
-    height: 30%;
-}/* Texte de la section présentation */
-
-.photo_actu {
-    width: 20%;
-    height: 20%;
-  }/* Photo des articles */
-
-.actualite {
-    display: flex;
-    flex-direction:column ;
-    padding: 10px;
-} /* Section actualité qui comprend les 2 articles */
-
-.actu_article{
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-    justify-content: center;
-}/* Comprend l'image, le titre et le texte de l'article */
-.contenu_actu {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 40%;
-}/* Comprend le titre et le texte de l'article */
-
-h3 {
-    width: 80%;
-    height: 20%;
-    font-size: 1.3rem;
-    font-weight: bold;
-}/* titre de l'article */
-
-.text_actu {
-    width: 30%;
-    height: 40%;
-}/* texte de l'article */
-
-
-}
-
