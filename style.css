@@ -781,6 +781,7 @@ form {
     .submit {
         /* bouton "Envoyer */
         align-self: flex-end;
+        min-width: 130px;
     }
     form input,
     select,
