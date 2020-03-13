@@ -35,7 +35,7 @@ header#main_header {
 .logo_container {
     display: flex;
     flex-direction: row;
-    width: 25%;
+    width: 35%;
     background-color: rgba(255, 255, 255, 0.3);
     margin: 1em;
     padding: 1em;
@@ -43,7 +43,7 @@ header#main_header {
 }
 
 .logo_container img {
-    width: 50%;
+    width: 7em;
 }
 
 .logo_text {
@@ -709,7 +709,6 @@ form {
     }
     /* Header */
     header#main_header {
-        height: 20vh;
         background-image: url(img/chocolate_chopped.webp);
         background-size: cover;
         background-repeat: no-repeat;
@@ -717,6 +716,14 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+    }
+    .logo_container {
+        align-self: center;
+        width: 35%;
+        min-width: 300px;
+    }
+    .logo_container img {
+        width: 7em;
     }
     /* Navbar */
     .navbar_container {
