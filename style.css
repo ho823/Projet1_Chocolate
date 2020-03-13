@@ -434,8 +434,9 @@ form {
 
 .presentation {
     display: flex;
-    margin-bottom: 2em;
-    padding: 4em;
+    margin-bottom: 3em;
+    margin-top: 5em;
+    padding: 2em;
     justify-content: center;
 }
 
@@ -449,10 +450,11 @@ form {
 /* Photo de la sectio présentation*/
 
 .text_histoire {
-    padding-left: 1rem;
     width: 40%;
     height: 30%;
+    margin-left: 2em;
     text-align: justify;
+
 }
 
 
@@ -469,7 +471,9 @@ form {
 .actualite {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    padding: 2em;
 }
 
 
@@ -478,8 +482,11 @@ form {
 .actu_article {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 1em;
     justify-content: center;
+    margin-bottom: 1em;
+    margin: 0.5rem;
+    box-shadow: 0 0 1rem black;
 }
 
 
@@ -490,6 +497,8 @@ form {
     flex-direction: column;
     padding: 10px;
     width: 40%;
+    justify-content: space-evenly;
+    margin-left: 2em;
 }
 
 
@@ -498,6 +507,8 @@ form {
 #maison h3 {
     font-size: 1.3rem;
     font-weight: bold;
+    margin-bottom: 0.3em;
+    margin-left: 0.25em;
 }
 
 
@@ -505,7 +516,9 @@ form {
 
 
 /* texte de l'article */
-
+.text_actu {
+    margin-left: 0.25em;
+}
 
 /*----------- PAGE PRODUITS --------------- */
 
@@ -689,8 +702,8 @@ form {
     }
     /* Comprend l'image, le titre et le texte de l'article */
     .contenu_actu {
-        padding: 2%;
         width: 100%;
+        padding-right: 3em;
         text-align: center;
     }
     /* Comprend le titre et le texte de l'article */
