@@ -216,15 +216,16 @@ div.main_article_image {
 div.main_article_image img {
     display: inline-block;
     width: inherit;
+    border-radius: 15px;
 }
 
 div.main_article_content {
     position: absolute;
     background-color: #c891d7;
     opacity: 0.8;
-    top: 60%;
+    top: 55%;
     left: 20%;
-    max-block-size: 45%;
+    max-block-size: 50%;
     padding: 1em 2em;
 }
 
@@ -360,6 +361,11 @@ div.articles_content {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
+}
+
+div.articles_content h3,
+div.articles_content p {
+    padding: 0.5em;
 }
 
 
@@ -798,6 +804,7 @@ form {
     .menu-toggle button {
         padding: 0.5em 2em;
         background-color: #c891d7;
+        border: none;
         border-radius: 5px;
     }
     header nav {
