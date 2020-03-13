@@ -2,50 +2,115 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-  <header>
-    <!-- HEADER À INSÉRER ICI -->
-  </header>
+    <header id="main_header">
+        <div class="logo_container">
+            <div class="logo_img_container">
+                <img src="img/logo-chocowild.png" alt="Logo de ChocoWild">
+            </div>
+            <div class="logo_text">
+                <h2>Maitre Chocolatier depuis 1950</h2>
+            </div>
+        </div>
+        <div class="navbar_container">
+            <nav id="nav_header">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li class="li_dropdown">
+                        <a href="#">Notre Maison</a>
+                        <ul id="ul_1">
+                            <li><a href="maison.html">Historique</a></li>
+                            <li><a href="maison.html">Actualités</a></li>
+                        </ul>
+                    </li>
+                    <li class="li_dropdown">
+                        <a href="#">Nos Produits</a>
+                        <ul id="ul_2">
+                            <li><a href="produits.html">Catégorie 1</a></li>
+                            <li><a href="produits.html">Catégorie 2</a></li>
+                            <li><a href="produits.html">Catégorie 3</a></li>
+                            <li><a href="produits.html">Catégorie 4</a></li>
+                        </ul>
+                    </li>
+                    <li id="go_to_the_end"><a href="#" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="button_nav" class="menu-toggle">
+                <button> - </button>
+            </div>
+        </div>
+    </header>
 
+    <!-- SECTION DES COORDONNÉES -->
+    <section class="coordonnees">
+        <h2>Nos coordonnées</h2>
+        <ul>
+            <p>M. Gérard Chocolat</p>
+            <p>02 25 45 84 46</p>
+            <p>1 Rue du chocolat, 44 000 Nantes</p>
+        </ul>
+    </section>
 
+    <hr>
+    <!-- ligne de séparation -->
 
-  <!-- SECTION DES COORDONNÉES -->
-  <section class="coordonnees">
-    <h2>Nos coordonnées</h2>
-    <ul>
-      <p>M. Gérard Chocolat</p>
-      <p>02 25 45 84 46</p>
-      <p>1 Rue du chocolat, 44 000 Nantes</p>
-    </ul>
-  </section>
-
-<hr> <!-- ligne de séparation -->
-
-  <!-- FORMULAIRE DE CONTACT -->
-  <section class="contact">
-    <h2>Contact us</h2>
-    <form>
-      <input type="email" placeholder="@">
-      <input type="text" placeholder="&#8962;">
-      <select>
+    <!-- FORMULAIRE DE CONTACT -->
+    <section class="contact">
+        <h2>Contact us</h2>
+        <form>
+            <input type="email" placeholder="@">
+            <input type="text" placeholder="&#8962;">
+            <select>
         <option>Commande de chocolat</option>
         <option>...</option>
       </select>
-      <textarea placeholder="Tapez ici votre message"></textarea>
-      <input class="submit" type="submit" value="Envoyer">
-    </form>
-  </section>
+            <textarea placeholder="Tapez ici votre message"></textarea>
+            <input class="submit" type="submit" value="Envoyer">
+        </form>
+    </section>
 
 
-  <footer>
-    <!-- FOOTER À INSÉRER ICI -->
-  </footer>
+    <footer>
+        <div class="footer_container">
+            <div class="position_items_footer">
+                <div class="position_items_footer_bis">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="maison.html">Notre Maison</a></li>
+                        <li><a href="produits.html">Nos produits</a></li>
+                        <li><a href="#">Nos magasins</a></li>
+                    </ul>
+                </div>
+                <div class="position_items_footer_bis">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Règles de confidentialité</a></li>
+                        <li><a href="#">Copyright</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position_items_footer">
+                <p>Quai André Rhuys - 44200 Nantes</p>
+                <p>+33 xxx xxx xxx</p>
+                <div id="container_a_footer">
+                    <a href="#"><img class="logo" src="img/facebook.svg" alt="logo Facebook"></a>
+                    <a href="#"><img class="logo" src="img/twitter.svg" alt="logo Twitter"></a>
+                    <a href="#"><img class="logo" src="img/instagram.svg" alt="logo Instagram"></a>
+                    <a href="#"><img class="logo" src="img/envelope.svg" alt="logo mail"></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="animation.js"></script>
 
 </body>
