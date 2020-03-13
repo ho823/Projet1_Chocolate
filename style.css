@@ -55,37 +55,72 @@ header#main_header {
 
 .navbar_container {
     background-color: #362608;
-    opacity: 0.8;
+    box-sizing: border-box;
+    z-index: 100;
 }
 
-nav ul {
-    width: 100vw;
-    height: 100%;
+header nav {
+    background-color: #362608;
+    float: left;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 .navbar_container ul li {
     color: #ba8d3a;
-    padding: 1em;
+    position: relative;
 }
 
-nav a:hover {
-    /* Quand on passe la souris sur les liens  */
-    color: rgba(247, 237, 212, 1);
-    text-decoration: none;
+.navbar_container ul li a {
+    display: block;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 1rem 3rem;
 }
 
+.navbar_container ul li ul {
+    background-color: #362608;
+    position: absolute;
+    display: none;
+    width: auto;
+    right: 5%;
+    top: 100%;
+}
 
-/* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
+.navbar_container ul li ul#ul_2 {
+    right: 2%;
+}
 
+.navbar_container ul li a.active,
+.navbar_container ul li a:hover {
+    background-color: rgba(247, 237, 212, 1);
+}
 
-/* .active {
-  color: rgb(53, 52, 52);
-  background-color: rgb(198, 199, 199);
-  box-shadow: 0 0 1.5px rgb(53, 52, 52);
-} */
+.navbar_container ul li:hover ul {
+    display: block;
+}
+
+.navbar_container ul li.active ul {
+    display: block;
+}
+
+.navbar_container ul li ul li {
+    display: block;
+    background-color: #362608;
+}
+
+.menu-toggle {
+    color: #ba8d3a;
+    float: right;
+    line-height: 2rem;
+    font-size: 1rem;
+    display: none;
+}
 
 
 /* Footer */
@@ -140,7 +175,10 @@ footer div p {
 .logo {
     width: 9%;
     height: 9%;
- }/*LOGO FOOTER RESEAUX SOCIAUX*/
+}
+
+
+/*LOGO FOOTER RESEAUX SOCIAUX*/
 
 
 /*  ----------------------- HOME PAGE ------------------- */
@@ -726,27 +764,58 @@ form {
         width: 7em;
     }
     /* Navbar */
-    .navbar_container {
+    header {
+        padding: O 2em;
+    }
+    .menu-toggle {
+        display: block;
+        float: none;
+        padding: 0.5em;
+    }
+    .menu-toggle button {
+        padding: 0.5em 2em;
+        background-color: lightcoral;
+        border-color: black;
+        border-radius: 5px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        top: 29%;
         background-color: #362608;
-        opacity: 0.8;
+        transition: 0.5s;
+        z-index: 100;
     }
-    nav ul {
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+    header nav.active {
+        left: 0;
     }
-    .navbar_container ul li {
-        color: #ba8d3a;
-        padding: 1em;
+    header nav ul {
+        display: block;
+        text-align: center;
     }
-    /* Classe active qui s'applique sur le bouton en lien avec la page du navbar sur lequel on est*/
-    /* .active {
-        color: rgb(53, 52, 52);
-        background-color: rgb(198, 199, 199);
-        box-shadow: 0 0 1.5px rgb(53, 52, 52);
-    } */
+    header nav ul li a {
+        border-bottom: 1px solid black;
+    }
+    .navbar_container ul li:hover ul {
+        display: none;
+    }
+    .navbar_container ul li.active ul {
+        display: none;
+    }
+    header nav ul li.active ul {
+        display: none;
+        overflow: hidden;
+    }
+    header nav ul li ul li {
+        width: 100%;
+        display: none;
+        overflow: hidden;
+    }
+    .deployed {
+        height: auto;
+    }
     /* Footer */
     footer {
         background-color: #362608;
@@ -789,12 +858,11 @@ form {
     footer div p {
         color: #ba8d3a;
     }
-
     .logo {
         width: 8%;
         height: 8%;
-     }/*LOGO FOOTER RESEAUX SOCIAUX*/
-    
+    }
+    /*LOGO FOOTER RESEAUX SOCIAUX*/
     /*  ----------------------- HOME PAGE ------------------- */
     /* Section Notre maison */
     section#main_article {

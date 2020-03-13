@@ -19,14 +19,31 @@
             </div>
         </div>
         <div class="navbar_container">
-            <nav>
+            <nav id="nav_header">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="maison.html">Notre Maison</a></li>
-                    <li><a href="produits.html">Nos Produits</a></li>
-                    <li id="go_to_the_end"><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li class="li_dropdown">
+                        <a href="#">Notre Maison</a>
+                        <ul id="ul_1">
+                            <li><a href="maison.html">Historique</a></li>
+                            <li><a href="maison.html">Actualités</a></li>
+                        </ul>
+                    </li>
+                    <li class="li_dropdown">
+                        <a href="#">Nos Produits</a>
+                        <ul id="ul_2">
+                            <li><a href="produits.html">Catégorie 1</a></li>
+                            <li><a href="produits.html">Catégorie 2</a></li>
+                            <li><a href="produits.html">Catégorie 3</a></li>
+                            <li><a href="produits.html">Catégorie 4</a></li>
+                        </ul>
+                    </li>
+                    <li id="go_to_the_end"><a href="c#">Contact</a></li>
                 </ul>
             </nav>
+            <div id="button_nav" class="menu-toggle">
+                <button> - </button>
+            </div>
         </div>
     </header>
     <section id="main_article">
@@ -112,10 +129,12 @@
                     <a href="#"><img class="logo" src="img/instagram.svg" alt="logo Instagram"></a>
                     <a href="#"><img class="logo" src="img/envelope.svg" alt="logo mail"></a>
                 </div>
-     
+
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript" src="animation.js"></script>
 </body>
 
 </html>
