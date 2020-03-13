@@ -650,7 +650,6 @@ form {
         width: 50%;
         height: 25rem;
         text-align: justify;
-        overflow: scroll;
     }
     /* Texte de la section présentation */
     .photo_histoire {
