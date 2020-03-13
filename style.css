@@ -487,6 +487,7 @@ select {
 .photo_actu {
     width: 20%;
     height: 20%;
+    align-self: center;
 }
 
 
@@ -618,13 +619,10 @@ select {
         /* align-items: center; */
         margin-left: auto;
         margin-right: auto;
-
     }
-
     .produit .image {
         margin-bottom: 2em;
     }
-
     .produit {
         /* align-items: center;
         align-content: center; */
