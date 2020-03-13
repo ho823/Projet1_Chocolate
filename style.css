@@ -137,6 +137,11 @@ footer div p {
     color: #ba8d3a;
 }
 
+.logo {
+    width: 9%;
+    height: 9%;
+ }/*LOGO FOOTER RESEAUX SOCIAUX*/
+
 
 /*  ----------------------- HOME PAGE ------------------- */
 
@@ -777,6 +782,12 @@ form {
     footer div p {
         color: #ba8d3a;
     }
+
+    .logo {
+        width: 8%;
+        height: 8%;
+     }/*LOGO FOOTER RESEAUX SOCIAUX*/
+    
     /*  ----------------------- HOME PAGE ------------------- */
     /* Section Notre maison */
     section#main_article {
