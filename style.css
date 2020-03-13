@@ -574,13 +574,6 @@ form {
         align-content: center; */
         margin-left: auto;
         margin-right: auto;
-        border-style: solid;
-        border-width: 0 0 2px 0;
-        border-color: #3A0051;
-    }
-
-    .produit .image {
-        margin-bottom: 2em;
     }
 }
 
@@ -719,23 +712,16 @@ form {
         margin: 2em;
         margin-left: auto;
         margin-right: auto;
-
     }
     .produit {
         /* solution au problème de marge */
         width: 100%;
         min-width: 0;
-        border-style: solid;
-        border-width: 0 0 2px 0;
-        border-color: #3A0051;
-
-
     }
-    .catalogue article {
+    article {
         /* ajustement du texte */
         padding-left: 5%;
         padding-right: 5%;
-
     }
     /*FIN DU MEDIA QUERY */
 }
@@ -877,7 +863,7 @@ form {
         width: 1.5em;
         height: 1.5em;
      }/*LOGO FOOTER RESEAUX SOCIAUX*/
-
+    
     /*  ----------------------- HOME PAGE ------------------- */
     /* Section Notre maison */
     section#main_article {
