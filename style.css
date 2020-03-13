@@ -431,6 +431,7 @@ form {
 .photo_histoire {
     width: 20%;
     height: 40%;
+    border-radius: 15px;
 }
 
 
