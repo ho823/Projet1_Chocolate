@@ -173,12 +173,9 @@ footer div p {
 }
 
 .logo {
-    width: 9%;
-    height: 9%;
-}
-
-
-/*LOGO FOOTER RESEAUX SOCIAUX*/
+    width: 3em;
+    height: 3em;
+ }/*LOGO FOOTER RESEAUX SOCIAUX*/
 
 
 /*  ----------------------- HOME PAGE ------------------- */
@@ -815,6 +812,7 @@ form {
     .deployed {
         height: auto;
     }
+
     /* Footer */
     footer {
         background-color: #362608;
@@ -857,11 +855,12 @@ form {
     footer div p {
         color: #ba8d3a;
     }
+
     .logo {
-        width: 8%;
-        height: 8%;
-    }
-    /*LOGO FOOTER RESEAUX SOCIAUX*/
+        width: 1.5em;
+        height: 1.5em;
+     }/*LOGO FOOTER RESEAUX SOCIAUX*/
+    
     /*  ----------------------- HOME PAGE ------------------- */
     /* Section Notre maison */
     section#main_article {
