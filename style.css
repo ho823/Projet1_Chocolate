@@ -387,7 +387,8 @@ form {
 
 .presentation {
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 2em;
+    padding: 4em;
     justify-content: center;
 }
 
@@ -605,6 +606,7 @@ form {
         margin-right: 1%;
         display: flex;
         flex-direction: row;
+        padding: 1em;
     }
     .text_histoire {
         font-size: 1.1rem;
