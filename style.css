@@ -368,6 +368,10 @@ div.articles_content p {
     padding: 0.5em;
 }
 
+div.articles_content h3 a {
+    color: black;
+}
+
 
 /*----------- PAGE CONTACT--------------- */
 
@@ -460,7 +464,6 @@ form {
     height: 30%;
     margin-left: 2em;
     text-align: justify;
-
 }
 
 
@@ -522,9 +525,11 @@ form {
 
 
 /* texte de l'article */
+
 .text_actu {
     margin-left: 0.25em;
 }
+
 
 /*----------- PAGE PRODUITS --------------- */
 
