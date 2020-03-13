@@ -627,10 +627,8 @@ form {
     }
     /* Section actualité qui comprend les 2 articles */
     .photo_actu {
-        width: 50%;
-        height: 50%;
-        padding: 4%;
-        margin-left: 20%;
+        width: 6em;
+        height: 6em;
     }
     /* Photo des articles */
     .actu_article {
@@ -638,6 +636,7 @@ form {
         padding: 2%;
         width: 100%;
         margin-right: 5%;
+        align-items: center;
     }
     /* Comprend l'image, le titre et le texte de l'article */
     .contenu_actu {
