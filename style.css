@@ -1,5 +1,9 @@
 /* Général */
 
+:root {
+    --background-color: #f3e7fb;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +11,10 @@
 
 body {
     background-color: #f3e7fb;
+}
+
+[data-theme="dark"] {
+    --background-color: #aaa5ad;
 }
 
 #index {
@@ -197,6 +205,7 @@ footer div p {
 
 section#main_article {
     margin: 2em 0;
+    background-color: var(--background-color);
 }
 
 section#main_article article {
@@ -425,10 +434,9 @@ hr {
 .submit {
     /* bouton "Envoyer */
     align-self: flex-end;
-    color:white;
+    color: white;
     background-color: #3a0051;
     opacity: 0.7;
-
 }
 
 form input,
@@ -437,7 +445,7 @@ textarea {
     margin-bottom: 2em;
     box-sizing: border-box;
     border-radius: 2em;
-    padding: 1em; 
+    padding: 1em;
 }
 
 form {
@@ -445,10 +453,10 @@ form {
     flex-direction: column;
     width: 90vw;
     max-width: 700px;
-    color:#3a0051 ;
+    color: #3a0051;
     margin-bottom: 3em;
-
 }
+
 select {
     background-color: #c891d7;
     opacity: 0.8;
