@@ -1,11 +1,11 @@
 const navHeader = document.body.querySelector('#nav_header');
-const buttonNav = document.body.querySelector('#button_nav');
+const navBurger = document.body.querySelector('#burger');
 
 function dropdownMenu() {
     navHeader.classList.toggle('deployed');
 };
 
-buttonNav.addEventListener("click", dropdownMenu);
+navBurger.addEventListener("click", dropdownMenu);
 
 //changement fond
 function switchTheme(event) {
@@ -18,3 +18,10 @@ function switchTheme(event) {
 
 const toggler = document.querySelector('#toggler');
 toggler.addEventListener('change', switchTheme, false);
+
+//menu burger
+const burgerCross = document.querySelector('.menu-toggle');
+
+burgerCross.addEventListener('click', () => {
+    burgerCross.classList.toggle('burgerStyle');
+})
