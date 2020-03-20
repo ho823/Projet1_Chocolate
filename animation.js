@@ -17,7 +17,9 @@ function switchTheme(event) {
 }
 
 const toggler = document.querySelector('#toggler');
-toggler.addEventListener('change', switchTheme, false);
+if (toggler) {
+    toggler.addEventListener('change', switchTheme, false);
+}
 
 //menu burger
 const burgerCross = document.querySelector('.menu-toggle');
