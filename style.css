@@ -1,7 +1,7 @@
 /* Général */
 
 :root {
-    --background-color: #f3e7fb;
+    --background-color: white;
 }
 
 * {
@@ -10,11 +10,11 @@
 }
 
 body {
-    background-color: #f3e7fb;
+    background-color: white;
 }
 
 [data-theme="dark"] {
-    --background-color: #aaa5ad;
+    --background-color: #141829;
 }
 
 #index {
@@ -25,16 +25,19 @@ ul,
 a {
     list-style: none;
     text-decoration: none;
-    color: #e3dfe6;
+    color: white;
+}
+
+a, a:hover, a:visited, a:active {
+  color: white;
+  text-decoration: none;
 }
 
 
 /* Header */
 
 header#main_header {
-    background-image: url(img/chocolate_chopped.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #141829;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -44,8 +47,8 @@ header#main_header {
     display: flex;
     flex-direction: row;
     width: 35%;
-    background-color: #f3e7fb;
-    opacity: 0.6;
+    background-color: white;
+    opacity: 0.8;
     margin: 1em;
     padding: 1em;
     border-radius: 50% 20% / 10% 40%;
@@ -58,20 +61,20 @@ header#main_header {
 .logo_text {
     align-self: center;
     text-align: center;
-    color: #3a0051;
+    color: #141829;
 }
 
 
 /* Navbar */
 
 .navbar_container {
-    background-color: #3a0051;
+    background-color: #141829;
     box-sizing: border-box;
     z-index: 100;
 }
 
 header nav {
-    background-color: #3a0051;
+    background-color: #141829;
     float: left;
 }
 
@@ -82,7 +85,7 @@ header nav ul {
 }
 
 .navbar_container ul li {
-    color: #e3dfe6;
+    color: white;
     position: relative;
 }
 
@@ -95,7 +98,7 @@ header nav ul {
 }
 
 .navbar_container ul li ul {
-    background-color: #3a0051;
+    background-color: #141829;
     position: absolute;
     display: none;
     width: auto;
@@ -108,13 +111,13 @@ header nav ul {
 }
 
 .navbar_container ul li a.active_item {
-    background-color: #c891d7;
-    opacity: 0.8;
+    background-color: #21294c;
+    opacity: 0.85;
 }
 
 .navbar_container ul li a:hover {
-    background-color: #c891d7;
-    opacity: 0.9;
+    background-color: #21294c;
+    opacity: 1;
 }
 
 .navbar_container ul li:hover ul {
@@ -127,7 +130,7 @@ header nav ul {
 
 .navbar_container ul li ul li {
     display: block;
-    background-color: #3a0051;
+    background-color: #141829;
 }
 
 
@@ -145,19 +148,21 @@ header nav ul {
 .menu-toggle span {
     width: 100%;
     height: 4px;
-    background-color: #e3dfe6;
+    background-color: white;
     display: block;
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-5O%);
-    transition: backcground-color 0.5s ease-in-out;
+    transition: backcground-color( 0.5s ease-in-out);
 }
+
+
 
 .menu-toggle span::before,
 .menu-toggle span::after {
     content: '';
-    background-color: #e3dfe6;
+    background-color: white;
     position: absolute;
     width: 100%;
     height: 4px;
@@ -189,7 +194,7 @@ header nav ul {
 /* Footer */
 
 footer {
-    background-color: #3a0051;
+    background-color: #141829;
     text-align: center;
 }
 
@@ -233,7 +238,7 @@ div#container_a_footer {
 }
 
 footer div p {
-    color: #e3dfe6;
+    color: white;
 }
 
 .logo {
@@ -284,7 +289,7 @@ div.main_article_image img {
 
 div.main_article_content {
     position: absolute;
-    background-color: #c891d7;
+    background-color: #f2dea8;
     opacity: 0.8;
     top: 55%;
     left: 20%;
@@ -381,7 +386,7 @@ div.articles_content h3 a {
 /* STYLE DE LA LIGNE DE SÉPARATION */
 
 hr {
-    border-color: #3a0051;
+    border-color: #141829;
 }
 
 
@@ -406,7 +411,7 @@ hr {
     /* bouton "Envoyer */
     align-self: flex-end;
     color: white;
-    background-color: #3a0051;
+    background-color: #141829;
     opacity: 0.7;
 }
 
@@ -424,12 +429,12 @@ form {
     flex-direction: column;
     width: 90vw;
     max-width: 700px;
-    color: #3a0051;
+    color: #141829;
     margin-bottom: 3em;
 }
 
 select {
-    background-color: #c891d7;
+    background-color: white;
     opacity: 0.8;
 }
 
@@ -551,8 +556,6 @@ select {
     height: 330px;
     width: 250px;
     min-width: 230px;
-    /* margin-right: 1em;
-  margin-left: 2em; */
 }
 
 .catalogue article {
@@ -569,6 +572,13 @@ select {
     min-width: 240px;
 }
 
+.title_category {
+  color: #21294c;
+}
+
+article {
+  color: #7D7D7D;
+}
 
 /* DESKTOP STYLES */
 
@@ -593,9 +603,7 @@ select {
     /*--PAGE PRODUITS--*/
     .catalogue {
         display: block;
-        /* affichage en block des articles du catalogue dans la page "Produits" */
         align-content: center;
-        /* align-items: center; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -609,7 +617,7 @@ select {
         margin-right: auto;
         border-style: solid;
         border-width: 0 0 2px 0;
-        border-color: #3A0051;
+        border-color: #f2dea8;
     }
 }
 
@@ -633,21 +641,17 @@ select {
         font-size: 1.1rem;
     }
     .coordonnees h2 {
-        /* Titre des coordonnées*/
         padding-bottom: 5%;
     }
     .coordonnees p {
-        /* espacement des lignes de coordonnées */
         padding-bottom: 3%;
     }
     /* STYLE DU FORMULAIRE */
     .contact h2 {
-        /* Titre du formulaire */
         padding-bottom: 5%;
         padding-top: 5%;
     }
     .contact {
-        /* section du formulaire */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -655,7 +659,6 @@ select {
         padding: 1em;
     }
     .submit {
-        /* bouton "Envoyer */
         align-self: flex-end;
         width: 20%;
     }
@@ -755,7 +758,7 @@ select {
         min-width: 0;
         border-style: solid;
         border-width: 0 0 2px 0;
-        border-color: #3A0051;
+        border-color: #f2dea8;
     }
     .catalogue article {
         /* ajustement du texte */
@@ -781,11 +784,11 @@ select {
     a {
         list-style: none;
         text-decoration: none;
-        color: #e3dfe6;
+        color: white;
     }
     /* Header */
     header#main_header {
-        background-image: url(img/chocolate_chopped.webp);
+        background-color: #141829;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -801,7 +804,7 @@ select {
     .logo_container img {
         width: 7em;
     }
-    /* Navbar */
+
     header {
         padding: O 2em;
     }
@@ -810,8 +813,8 @@ select {
         width: 100%;
         height: 0;
         overflow: hidden;
-        top: 29%;
-        background-color: #3a0051;
+        top: 28%;
+        background-color: #141829;
         transition: 0.5s;
         z-index: 100;
     }
@@ -823,7 +826,7 @@ select {
         text-align: center;
     }
     header nav ul li a {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #21294c;
     }
     .navbar_container ul li:hover ul {
         display: none;
@@ -848,9 +851,9 @@ select {
         float: none;
         left: 47%;
     }
-    /* Footer */
+
     footer {
-        background-color: #3a0051;
+        background-color: #141829;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -888,7 +891,7 @@ select {
         margin-top: 1em;
     }
     footer div p {
-        color: #e3dfe6;
+        color: white;
     }
     .logo {
         width: 1.5em;
@@ -896,7 +899,6 @@ select {
     }
     /*LOGO FOOTER RESEAUX SOCIAUX*/
     /*  ----------------------- HOME PAGE ------------------- */
-    /* Section Notre maison */
     section#main_article {
         display: flex;
         justify-content: center;
@@ -920,7 +922,8 @@ select {
         top: 65%;
         left: auto;
         max-block-size: 40%;
-        background-color: #c891d7;
+        color: #141829;
+        background-color: #f2dea8;
         opacity: 0.8;
         overflow: auto;
     }
@@ -981,7 +984,7 @@ select {
     }
     /* STYLE DE LA LIGNE DE SÉPARATION */
     hr {
-        border-color: #3a0051;
+        border-color: #141829;
     }
     /* STYLE DU FORMULAIRE */
     .contact h2 {
